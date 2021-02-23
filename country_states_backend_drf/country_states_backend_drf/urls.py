@@ -22,5 +22,6 @@ urlpatterns = [
     path('api/countries', views.CountryList.as_view()),
     path('api/countries/<code>/states/', views.StateListByCountry.as_view()),
     path('api/states', views.StateList.as_view()),
+    path('api/cities/<pk>', views.CityDetail.as_view(), name='city-detail')
 
 ]
